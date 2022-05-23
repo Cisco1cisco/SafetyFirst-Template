@@ -451,3 +451,72 @@ header .list .meun ul li a:hover {
 }
 
 /* End Landing */
+
+/* Start Three Boxes */
+
+.three-boxes .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .three-boxes .container {
+        flex-direction: column;
+        width: auto;
+        padding: 50px 0;
+    }
+}
+
+.three-boxes .box {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 991px) {
+    .three-boxes .box {
+        padding: 10px 20px;
+    }
+}
+
+.three-boxes .box:nth-child(2) {
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent #dee2e6;
+}
+
+@media (max-width: 991px) {
+    .three-boxes .box:nth-child(2) {
+        border-color: #dee2e6 transparent;
+    }
+}
+
+.three-boxes .box img {
+    width: 70px;
+}
+
+.three-boxes .box .text {
+    padding: 15px;
+}
+
+.three-boxes .box h5 {
+    font-size: 20px;
+    color: var(--title-color, #262626);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 991px) {
+    .three-boxes .box h5 {
+        text-align: center;
+    }
+}
+
+.three-boxes .box p {
+    color: var(--para-color, #848484);
+}
+
+/* End Three Boxes */
