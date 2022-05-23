@@ -77,3 +77,53 @@ p {
 
 /* Start Component */
 /* End Component */
+
+/* Start Header */
+
+header .follow {
+    background-color: #262626;
+    color: white;
+    padding: 5px 0;
+}
+
+header .follow .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    header .follow .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+header .follow .container .open,
+header .follow .socials {
+    display: flex;
+    align-content: center;
+}
+
+header .follow .open span {
+    display: block;
+    margin-left: 5px;
+    line-height: 1.5;
+}
+
+header .follow .socials {
+    display: flex;
+    align-items: center;
+}
+
+header .follow .socials p {
+    margin-right: 10px;
+}
+
+header .follow .socials a {
+    display: block;
+    color: white;
+    margin-right: 15px;
+}
+
+/* End Header */
