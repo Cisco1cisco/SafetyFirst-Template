@@ -77,6 +77,25 @@ p {
 /* End Global Rules */
 
 /* Start Component */
+
+a.comp {
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    width: fit-content;
+    background-color: var(--main-color, #E45F4E);
+    padding: 15px 20px;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+a.comp:hover {
+    background-color: #c7321e;
+}
+
 /* End Component */
 
 /* Start Header */
@@ -432,22 +451,8 @@ header .list .meun ul li a:hover {
 }
 
 .landing .text a {
-    text-transform: uppercase;
-    color: white;
-    display: block;
-    width: fit-content;
     margin: 0 auto;
-    background-color: var(--main-color, #E45F4E);
-    padding: 15px 20px;
-    transition: var(--trans-dur, 0.3s);
-    -webkit-transition: var(--trans-dur, 0.3s);
-    -moz-transition: var(--trans-dur, 0.3s);
-    -ms-transition: var(--trans-dur, 0.3s);
-    -o-transition: var(--trans-dur, 0.3s);
-}
 
-.landing .text a:hover {
-    background-color: #c7321e;
 }
 
 /* End Landing */
@@ -520,3 +525,98 @@ header .list .meun ul li a:hover {
 }
 
 /* End Three Boxes */
+
+/* Start About */
+
+.about {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+@media (max-width: 991px) {
+    .about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 991px) {
+    .about .image {
+        width: 100%;
+    }
+}
+
+.about .image img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.about .text {
+    padding: 0 30px;
+}
+
+@media (max-width: 991px) {
+    .about .text {
+        padding: 30px;
+    }
+}
+
+.about .text .up {
+    margin-bottom: 30px;
+}
+
+.about .text .up h5 {
+    color: var(--main-color, #E45F4E);
+    font-size: 20px;
+}
+
+.about .text .up h1 {
+    font-size: 39px;
+    color: var(--title-color, #262626);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about .text .up p {
+    color: var(--para-color, #848484);
+}
+
+.about .text .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .about .text .main {
+        flex-direction: column;
+    }
+}
+
+.about .text .main .option {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.about .text .option img {
+    width: 70px;
+}
+
+.about .text .option h5 {
+    font-size: 20px;
+    color: var(--title-color, #262626);
+    text-transform: uppercase;
+}
+
+.about .text .option p {
+    color: var(--para-color, #848484);
+}
+
+.about .text a {
+    margin-top: 20px;
+}
+
+/* End About */
