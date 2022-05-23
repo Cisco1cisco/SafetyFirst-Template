@@ -80,8 +80,10 @@ p {
 
 /* Start Header */
 
+/* Start Follow */
+
 header .follow {
-    background-color: #262626;
+    background-color: var(--title-color, #262626);
     color: white;
     padding: 5px 0;
 }
@@ -125,5 +127,71 @@ header .follow .socials a {
     color: white;
     margin-right: 15px;
 }
+
+/* End Follow */
+
+/* Start Sec */
+
+header .sec {
+    padding: 10px 0;
+}
+
+header .sec .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:991px) {
+    header .sec .container {
+        justify-content: center;
+    }
+}
+
+@media (max-width:991px) {
+    header .sec .logo {
+        display: none;
+    }
+}
+
+header .logo a {
+    display: block;
+    color: var(--title-color, #262626);
+    font-size: 39px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+header .logo a span {
+    color: var(--main-color, #E45F4E);
+}
+
+header .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .sec .cont div {
+    padding: 10px;
+    text-align: center;
+}
+
+header .sec .cont div:nth-child(2) {
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent #dee2e6;
+}
+
+header .sec .cont div h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+header .sec .cont div p {
+    color: var(--para-color, #848484);
+}
+
+/* End Sec */
 
 /* End Header */
