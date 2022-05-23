@@ -4,6 +4,7 @@
     --main-color: #E45F4E;
     --title-color: #262626;
     --para-color: #848484;
+    --trans-dur: 0.3s;
 }
 
 /* End Variables */
@@ -193,5 +194,87 @@ header .sec .cont div p {
 }
 
 /* End Sec */
+
+/* Start List */
+
+header .list {
+    background-color: var(--title-color, #262626);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 991px) {
+    header .list {
+        display: none;
+    }
+}
+
+header .list .logo a {
+    color: white;
+}
+
+header .list .meun {
+    position: relative;
+}
+
+header .list .meun .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40px;
+    height: 31px;
+    border: 1px solid #3c3c3c;
+    cursor: pointer;
+}
+
+header .list .meun .icon span {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    height: 3px;
+    display: block;
+}
+
+header .list .meun ul {
+    position: absolute;
+    left: -90px;
+    top: 100%;
+    background-color: var(--title-color, #262626);
+    width: 130px;
+    opacity: 0;
+    z-index: -1;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+header .list .meun:hover ul {
+    z-index: 1;
+    opacity: 1;
+}
+
+header .list .meun ul li a {
+    display: block;
+    text-transform: capitalize;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+header .list .meun ul li a:hover {
+    color: var(--main-color, #E45F4E);
+    padding-left: 15px;
+}
+
+/* End List */
 
 /* End Header */
