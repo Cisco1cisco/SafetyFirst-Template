@@ -4,6 +4,7 @@
     --main-color: #E45F4E;
     --title-color: #262626;
     --para-color: #848484;
+    --section-padd: 100px;
     --trans-dur: 0.3s;
 }
 
@@ -75,6 +76,26 @@ p {
 }
 
 /* End Global Rules */
+
+h5.main-title {
+    font-size: 20px;
+    text-align: center;
+    color: var(--main-color, #E45F4E);
+    text-transform: uppercase;
+}
+
+h5.main-title+h1 {
+    font-size: 39px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+    h5.main-title+h1 {
+        font-size: 30px;
+    }
+}
 
 /* Start Component */
 
@@ -620,3 +641,77 @@ header .list .meun ul li a:hover {
 }
 
 /* End About */
+
+/* Start Services */
+
+.services {
+    padding-top: var(--section-padd, 100px);
+    padding-bottom: var(--section-padd, 100px);
+}
+
+.services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services .container .serv {
+    flex-basis: calc((100% - 30px) / 3);
+    padding: 10px 15px;
+    border: 1px solid #dfdfdf;
+}
+
+@media (max-width: 991px) {
+    .services .container .serv {
+        flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services .container .serv {
+        flex-basis: 80%;
+        margin: 0 auto 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .services .container .serv {
+        flex-basis: 100%;
+    }
+}
+
+.services .serv .image>img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.services .serv .image .text {
+    display: flex;
+    align-items: center;
+    background-color: var(--title-color, #262626);
+}
+
+.services .serv .image .text img {
+    background-color: var(--main-color, #E45F4E);
+    width: 40px;
+    padding: 5px;
+}
+
+.services .serv .image .text h6 {
+    margin: 0;
+    flex: 1;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.services .serv p {
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: var(--para-color, #848484);
+}
+
+/* End Services */
