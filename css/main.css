@@ -77,6 +77,8 @@ p {
 
 /* End Global Rules */
 
+/* Start Component */
+
 h5.main-title {
     font-size: 20px;
     text-align: center;
@@ -96,8 +98,6 @@ h5.main-title+h1 {
         font-size: 30px;
     }
 }
-
-/* Start Component */
 
 a.comp {
     text-transform: uppercase;
@@ -780,3 +780,106 @@ header .list .meun ul li a:hover {
 }
 
 /* End Facts */
+
+/* Start Features */
+
+.features {
+    padding-top: var(--section-padd, 100px);
+    padding-bottom: var(--section-padd, 100px);
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+    .features .container {
+        flex-direction: column;
+    }
+}
+
+.features .main {
+    padding: 0 10px;
+    flex-basis: 49%;
+}
+
+@media (max-width: 991px) {
+    .features .main {
+        margin-bottom: 50px;
+    }
+}
+
+.features .main h5,
+.features .main h1 {
+    text-align: left;
+}
+
+.features .main h1 {
+    margin-bottom: 20px;
+}
+
+.features .main .image {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+}
+
+.features .main .image img {
+    width: 100%;
+}
+
+.features .main p {
+    margin: 20px 0;
+    color: var(--para-color, #848484);
+}
+
+.features .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.features .boxes .feature {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .features .boxes .feature {
+        flex-basis: 90%;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .features .boxes .feature {
+        flex-basis: 100%;
+    }
+}
+
+.features .boxes .feature .head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.features .boxes .feature .head img {
+    background-color: var(--main-color, #E45F4E);
+    width: 40px;
+    padding: 5px;
+}
+
+.features .boxes .feature .head h6 {
+    font-size: 16px;
+    color: var(--title-color, #262626);
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.features .boxes .feature p {
+    color: var(--para-color, #848484);
+}
+
+/* End Features */
