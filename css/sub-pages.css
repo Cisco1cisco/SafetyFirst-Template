@@ -1,0 +1,41 @@
+/* Start Header */
+
+header .list.sub-page {
+    display: flex;
+}
+
+
+@media (min-width: 991px) {
+
+    header .list.sub-page .logo {
+        display: none;
+    }
+
+    header .list.sub-page .icon {
+        display: none;
+    }
+
+    header .list.sub-page .meun {
+        width: 100%;
+    }
+
+    header .list.sub-page .meun ul {
+        z-index: 1;
+        opacity: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .list.sub-page .meun ul li a:hover {
+        padding: 10px;
+    }
+}
+
+/* End Header */
