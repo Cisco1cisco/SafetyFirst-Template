@@ -965,3 +965,100 @@ header .list .meun ul li a:hover {
 }
 
 /* End Subscribe */
+
+/* Start Team */
+
+.team {
+    padding-top: var(--section-padd, 100px);
+    padding-bottom: var(--section-padd, 100px);
+}
+
+.team .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.team .member {
+    flex-basis: calc((100% - 30px) / 2);
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .team .member {
+        flex-basis: 100%;
+    }
+}
+
+.team .member .text {
+    padding: 20px;
+    flex-basis: 50%;
+}
+
+@media (max-width: 576px) {
+    .team .member .text {
+        padding: 10px;
+    }
+}
+
+.team .member .text.right {
+    text-align: right;
+}
+
+.team .member .text h6 {
+    font-size: 16px;
+    color: var(--title-color, #262626);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.team .member .text span {
+    display: block;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.team .member .text p {
+    color: var(--para-color, #848484);
+}
+
+.team .member .text .social {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.team .member .text.right .social {
+    justify-content: flex-end;
+}
+
+.team .member .text .social a {
+    display: block;
+    margin-right: 15px;
+    color: var(--main-color, #E45F4E);
+    cursor: pointer;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+.team .member .text .social a:hover {
+    color: #c7321e;
+}
+
+.team .member .image {
+    flex-basis: 50%;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.team .member img {
+    width: 100%;
+}
+
+/* End Team */
