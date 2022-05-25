@@ -1062,3 +1062,135 @@ header .list .meun ul li a:hover {
 }
 
 /* End Team */
+
+/* Start Testimonial */
+
+.testimonial {
+    padding-top: var(--section-padd, 100px);
+    padding-bottom: var(--section-padd, 100px);
+    background-color: #f6f6f6;
+}
+
+.testimonial .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial .test {
+    flex-basis: calc((100% - 30px) / 3);
+}
+
+@media (max-width: 768px) {
+    .testimonial .test {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    .testimonial .test:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonial .test {
+        flex-basis: 100%;
+    }
+
+    .testimonial .test:nth-child(2) {
+        display: none;
+    }
+}
+
+.testimonial .test p {
+    background-color: white;
+    color: var(--para-color, #848484);
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.testimonial .test p::before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent #dee2e6 #dee2e6 transparent;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.testimonial .test .client {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial .test .client .image {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #dee2e6;
+    margin-right: 15px;
+}
+
+.testimonial .test .client .image img {
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testimonial .test .client .text h6 {
+    color: var(--main-color, #E45F4E);
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.testimonial .test .client .text span {
+    color: var(--para-color, #848484);
+}
+
+.testimonial nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.testimonial nav .dot {
+    background-color: #dddddd;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+.testimonial nav .dot.active {
+    background-color: var(--main-color, #E45F4E);
+}
+
+/* End Testimonial */
