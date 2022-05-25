@@ -1,3 +1,13 @@
+/* Start Variables */
+
+:root {
+    --main-color: #E45F4E;
+    --title-color: #262626;
+    --para-color: #848484;
+    --section-padd: 100px;
+    --trans-dur: 0.3s;
+}
+
 /* Start Header */
 
 header .list.sub-page {
@@ -39,3 +49,39 @@ header .list.sub-page {
 }
 
 /* End Header */
+
+/* Start Blog Grid */
+
+.blog nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.blog nav div {
+    border: 1px solid #dee2e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.blog nav div:not(div.active):hover {
+    background-color: #e9ecef;
+}
+
+.blog nav div.active {
+    color: white;
+    background-color: var(--main-color, #E45F4E);
+    border: none;
+}
+
+
+.blog nav div i {
+    font-size: 12px;
+}
+
+/* End Blog Grid */
